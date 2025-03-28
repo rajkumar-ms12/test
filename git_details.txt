@@ -1,0 +1,251 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\Workspace\WebApi> git add .
+PS D:\Workspace\WebApi> git commit -m "New BAS"
+[master (root-commit) 5551482] New BAS
+ 148 files changed, 16842 insertions(+)
+ create mode 100644 .vs/ProjectEvaluation/webapi.metadata.v9.bin
+ create mode 100644 .vs/ProjectEvaluation/webapi.projects.v9.bin
+ create mode 100644 .vs/ProjectEvaluation/webapi.strings.v9.bin
+ create mode 100644 .vs/WebApi/DesignTimeBuild/.dtbcache.v2
+ create mode 100644 .vs/WebApi/FileContentIndex/7c2141bc-6145-48e9-8e57-f8ccd8f55b72.vsidx
+ create mode 100644 .vs/WebApi/FileContentIndex/ddd63f1e-a2d1-4792-89c6-012ccf5494a5.vsidx
+ create mode 100644 .vs/WebApi/FileContentIndex/e04c80df-96bf-4b77-b049-df984c5eab4e.vsidx
+ create mode 100644 .vs/WebApi/FileContentIndex/e5cec626-61eb-4fc1-97be-eb8c0eabb1c0.vsidx
+ create mode 100644 .vs/WebApi/FileContentIndex/ec024fbf-2785-40ad-914f-f3e93dbee159.vsidx
+ create mode 100644 .vs/WebApi/config/applicationhost.config
+ create mode 100644 .vs/WebApi/v17/.futdcache.v2
+ create mode 100644 .vs/WebApi/v17/.suo
+ create mode 100644 .vs/WebApi/v17/DocumentLayout.backup.json
+ create mode 100644 .vs/WebApi/v17/DocumentLayout.json
+ create mode 100644 Controllers/ApiBaseController.cs
+ create mode 100644 Controllers/NationalityController.cs
+ create mode 100644 Controllers/WeatherForecastController.cs
+ create mode 100644 DataAccessLayer/DataAccessLayer.csproj
+ create mode 100644 DataAccessLayer/Implementation/NationalityDAL.cs
+ create mode 100644 DataAccessLayer/Implementation/RepositoryBase.cs
+ create mode 100644 DataAccessLayer/Interface/INationalityDAL.cs
+ create mode 100644 DataAccessLayer/Model/NationalityModel.cs
+ create mode 100644 DataAccessLayer/Uow/Implementation/UowNationality.cs
+ create mode 100644 DataAccessLayer/Uow/Interface/IUowNationality.cs
+ create mode 100644 DataAccessLayer/bin/Debug/net8.0/DataAccessLayer.deps.json
+ create mode 100644 DataAccessLayer/bin/Debug/net8.0/DataAccessLayer.dll
+ create mode 100644 DataAccessLayer/bin/Debug/net8.0/DataAccessLayer.pdb
+ create mode 100644 DataAccessLayer/obj/DataAccessLayer.csproj.nuget.dgspec.json
+ create mode 100644 DataAccessLayer/obj/DataAccessLayer.csproj.nuget.g.props
+ create mode 100644 DataAccessLayer/obj/DataAccessLayer.csproj.nuget.g.targets
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.AssemblyInfo.cs
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.AssemblyInfoInputs.cache
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.GlobalUsings.g.cs
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.assets.cache
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.csproj.AssemblyReference.cache
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.csproj.BuildWithSkipAnalyzers
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.csproj.CoreCompileInputs.cache
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.csproj.FileListAbsolute.txt
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.dll
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.pdb
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/ref/DataAccessLayer.dll
+ create mode 100644 DataAccessLayer/obj/Debug/net8.0/refint/DataAccessLayer.dll
+ create mode 100644 DataAccessLayer/obj/project.assets.json
+ create mode 100644 DataAccessLayer/obj/project.nuget.cache
+ create mode 100644 Logs/nlog-all-2024-10-17.log
+ create mode 100644 Logs/nlog-all-2025-01-11.log
+ create mode 100644 Logs/nlog-all-2025-01-14.log
+ create mode 100644 Program.cs
+ create mode 100644 Properties/launchSettings.json
+ create mode 100644 WeatherForecast.cs
+ create mode 100644 WebApi.csproj
+ create mode 100644 WebApi.csproj.user
+ create mode 100644 WebApi.http
+ create mode 100644 WebApi.sln
+ create mode 100644 appsettings.Development.json
+ create mode 100644 appsettings.json
+ create mode 100644 bin/Debug/net8.0/Azure.Core.dll
+ create mode 100644 bin/Debug/net8.0/Azure.Identity.dll
+ create mode 100644 bin/Debug/net8.0/Dapper.dll
+ create mode 100644 bin/Debug/net8.0/DataAccessLayer.dll
+ create mode 100644 bin/Debug/net8.0/DataAccessLayer.pdb
+ create mode 100644 bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.Identity.Client.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.OpenApi.dll
+ create mode 100644 bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+ create mode 100644 bin/Debug/net8.0/NLog.Extensions.Logging.dll
+ create mode 100644 bin/Debug/net8.0/NLog.Web.AspNetCore.dll
+ create mode 100644 bin/Debug/net8.0/NLog.dll
+ create mode 100644 bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+ create mode 100644 bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+ create mode 100644 bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+ create mode 100644 bin/Debug/net8.0/System.ClientModel.dll
+ create mode 100644 bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+ create mode 100644 bin/Debug/net8.0/System.Data.SqlClient.dll
+ create mode 100644 bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+ create mode 100644 bin/Debug/net8.0/System.Memory.Data.dll
+ create mode 100644 bin/Debug/net8.0/System.Runtime.Caching.dll
+ create mode 100644 bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+ create mode 100644 bin/Debug/net8.0/WebApi.deps.json
+ create mode 100644 bin/Debug/net8.0/WebApi.dll
+ create mode 100644 bin/Debug/net8.0/WebApi.exe
+ create mode 100644 bin/Debug/net8.0/WebApi.pdb
+ create mode 100644 bin/Debug/net8.0/WebApi.runtimeconfig.json
+ create mode 100644 bin/Debug/net8.0/appsettings.Development.json
+ create mode 100644 bin/Debug/net8.0/appsettings.json
+ create mode 100644 bin/Debug/net8.0/de/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/es/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/fr/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/it/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/ja/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/ko/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/nlog.config
+ create mode 100644 bin/Debug/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/ru/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win-arm64/native/sni.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win-x64/native/sni.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win-x86/native/sni.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Runtime.Caching.dll
+ create mode 100644 bin/Debug/net8.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+ create mode 100644 bin/Debug/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 bin/Debug/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+ create mode 100644 nlog.config
+ create mode 100644 obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+ create mode 100644 obj/Debug/net8.0/ApiEndpoints.json
+ create mode 100644 obj/Debug/net8.0/WebApi.AssemblyInfo.cs
+ create mode 100644 obj/Debug/net8.0/WebApi.AssemblyInfoInputs.cache
+ create mode 100644 obj/Debug/net8.0/WebApi.GeneratedMSBuildEditorConfig.editorconfig
+ create mode 100644 obj/Debug/net8.0/WebApi.GlobalUsings.g.cs
+ create mode 100644 obj/Debug/net8.0/WebApi.MvcApplicationPartsAssemblyInfo.cache
+ create mode 100644 obj/Debug/net8.0/WebApi.MvcApplicationPartsAssemblyInfo.cs
+ create mode 100644 obj/Debug/net8.0/WebApi.assets.cache
+ create mode 100644 obj/Debug/net8.0/WebApi.csproj.AssemblyReference.cache
+ create mode 100644 obj/Debug/net8.0/WebApi.csproj.BuildWithSkipAnalyzers
+ create mode 100644 obj/Debug/net8.0/WebApi.csproj.CoreCompileInputs.cache
+ create mode 100644 obj/Debug/net8.0/WebApi.csproj.FileListAbsolute.txt
+ create mode 100644 obj/Debug/net8.0/WebApi.csproj.Up2Date
+ create mode 100644 obj/Debug/net8.0/WebApi.dll
+ create mode 100644 obj/Debug/net8.0/WebApi.genruntimeconfig.cache
+ create mode 100644 obj/Debug/net8.0/WebApi.pdb
+ create mode 100644 obj/Debug/net8.0/apphost.exe
+ create mode 100644 obj/Debug/net8.0/ref/WebApi.dll
+ create mode 100644 obj/Debug/net8.0/refint/WebApi.dll
+ create mode 100644 obj/Debug/net8.0/staticwebassets.build.json
+ create mode 100644 obj/Debug/net8.0/staticwebassets/msbuild.build.WebApi.props
+ create mode 100644 obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.WebApi.props
+ create mode 100644 obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.WebApi.props
+ create mode 100644 obj/WebApi.csproj.nuget.dgspec.json
+ create mode 100644 obj/WebApi.csproj.nuget.g.props
+ create mode 100644 obj/WebApi.csproj.nuget.g.targets
+ create mode 100644 obj/project.assets.json
+ create mode 100644 obj/project.nuget.cache
+PS D:\Workspace\WebApi> git remote add origin https://github.com/rajkumar-ms12/WebApi.git
+PS D:\Workspace\WebApi> git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+PS D:\Workspace\WebApi> git push -u origin master
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/rajkumar-ms12/WebApi.git/' not found
+PS D:\Workspace\WebApi> git remote add origin https://github.com/rajkumar-ms12/WebApi.git
+error: remote origin already exists.
+PS D:\Workspace\WebApi> git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+PS D:\Workspace\WebApi> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 193, done.
+Counting objects: 100% (193/193), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (172/172), done.
+Writing objects: 100% (193/193), 6.50 MiB | 1.97 MiB/s, done.
+Total 193 (delta 23), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (23/23), done.
+To https://github.com/rajkumar-ms12/WebApi.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS D:\Workspace\WebApi>
+
+
+https://www.youtube.com/watch?v=VIBWdLLq9kQ  55:30
+
+Git full course in tamil: https://www.youtube.com/watch?v=436xDqkfU-s   42:06
+
+https://www.youtube.com/watch?v=wfpUcHIulhw
+
+https://stackoverflow.com/questions/15612003/how-to-push-a-new-folder-containing-other-folders-and-files-to-an-existing-git
+
+Git Command:
+
+git init . -> To go to version controller
+ll -lrt
+
+ll .git
+
+git status
+
+git rm -> cached to transfer untrack file
+git restore -> go back without changes
+
+got log --oneline
+
+git restore -> To back previous changes
+
+git reset --soft commit id -> Reset commit id to avoid changes
+
+rm -rf busapp -> to romove the folder        
+
+git revert -> using commit id to revert back
+
+git branch -> To check current branch
+
+git checkout branchname  -> Switched to branch branchname
+
+git checkout -b qa -> automatically create branch name qa
+
+git merge develop qa -> Merge changes from develop to qa
+
+git branch <branch name>
+
+git remote set-url new http:............
+
+git config --global user.name "Rajkumar"
+git config --global user.email "rajkumar@intercorpsolutions.in"
+
+git checkout -b "branchName" -> switched to new branch branchName
